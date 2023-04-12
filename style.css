@@ -1,0 +1,15 @@
+.flex-container , .sports-container {
+    display: flex;
+    background-color: #89aae0;
+    width: auto;
+  }
+
+  .flex-container > div {
+    background-color: lavender;
+    margin: 10px; font-size: 15px; font-family: "Roboto", sans-serif;
+    width: 33.33%; padding: 10px; height: 100px;  float: left;
+  }
+
+ .flex-container > div > input {
+    background-color: lavender;
+}
