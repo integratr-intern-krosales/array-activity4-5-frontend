@@ -5,45 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="try.css">
 </head>
-<body>
-
 <div class="container">
-<form class="form">
-    <div class="input">
-    <label> First name </label>
-    <input type="text">
-<!-- 
-<div class="input"> -->
-    <label> Middle name </label>
-    <input type="text"> 
-
-<!-- <div class="input"> -->
-    <label> Last name </label>
-    <input type="text">  
- <br>
- <div>
-    <label>Sports: </label> <br>
-    <input type="checkbox" id="basketball" class="checkbox"/>
-     <label>Basketball</label> <br>  
-     <input type="checkbox" id="volleyball" class="checkbox"/>  
-     <label>Volleyball</label> <br>  
-     <input type="checkbox" id="badminton" class="checkbox"/>  
-     <label>Badminton</label> <br>
-     <input type="checkbox" id="soccer" class="checkbox"/>
-     <label>Soccer</label> <br>
-     <input type="checkbox" id="baseball" class="checkbox"/> 
-     <label>Baseball</label> <br>
-     <input type="checkbox" id="tennis" class="checkbox"/> 
-     <label>Tennis</label> <br>
-     <input type="checkbox" id="surfing" class="checkbox"/> 
-     <label>Surfing</label> <br> <br>   
-     <input type="button" value="SUBMIT" onclick="onSubmit()">
-     <div id="fullname" ></div>
+     <div class="column" id="userInput">
+        <input type="text" placeholder="Firstname" id="firstname">
+    </div>
+    <div class="column" id="userInput">
+        <input type="text" placeholder="Middlename" id="middlename"> 
+    </div>
+    <div class="column" id="userInput">
+        <input type="text" placeholder="Lastname" id="lastname">  
+    </div> 
+</div> 
+<div class="flex-container">
+    <div class="sports-box">
+        <strong>Sports</strong> <br>
+        <input type="checkbox" value="basketball" class="sports"/>
+        <strong>Basketball</strong> <br>  
+        <input type="checkbox" value="volleyball" class="sports"/>  
+        <strong>Volleyball</strong> <br>  
+        <input type="checkbox" value="badminton" class="sports"/>  
+        <strong>Badminton</strong> <br>
+        <input type="checkbox" value="soccer" class="sports"/>
+        <strong>Soccer</strong> <br>
+        <input type="checkbox" value="baseball" class="sports"/> 
+        <strong>Baseball</strong> <br>
+        <input type="checkbox" value="tennis" class="sports"/> 
+        <strong>Tennis</strong> <br>
+        <input type="checkbox" value="surfing" class="sports"/> 
+        <strong>Surfing</strong> <br> <br>   
+        <button onclick="onSubmit()"> SUBMIT </button>
+    </div>
 </div>
-</form>
-</div>  
-    
+    <div class="result">
+        <div>
+           <strong> Fullname: </strong><span id="output"></span>
+        </div> <br>
+        <div>
+            <strong> Sports selected: </strong><span id="games"></span>
+        </div>
+    <div></div>
 </body>
+    <script src="script.js"></script>
 </html>
