@@ -2943,7 +2943,6 @@ textarea.form-control-lg {
 .btn-primary {
   color: black;
   background-color: white;
-  border-radius: 20px;
   border-color: #0d6efd;
 }
 .btn-primary:hover {
@@ -2972,9 +2971,9 @@ textarea.form-control-lg {
 }
 
 .btn-secondary {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  color: black;
+  background-color: white;
+  border-color: black;
 }
 .btn-secondary:hover {
   color: #fff;
@@ -3396,7 +3395,8 @@ textarea.form-control-lg {
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
-  border-radius: 0.3rem;
+  border-radius: 0.6rem;
+  border: none;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -5915,10 +5915,10 @@ textarea.form-control-lg {
 }
 
 .carousel-caption {
-  position: absolute;
+  position:absolute;
   right: 15%;
-  bottom: 1.25rem;
-  left: 15%;
+  bottom: 2rem;
+  left: 9rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #fff;
@@ -7054,6 +7054,7 @@ textarea.form-control-lg {
 
 .p-5 {
   padding: 3rem !important;
+  
 }
 
 .px-0 {
